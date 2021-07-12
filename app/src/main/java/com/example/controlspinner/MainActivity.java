@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
         ed2 = findViewById(R.id.edit2);
         tv1 = findViewById(R.id.textView);
         sp1 = findViewById(R.id.spinner);
-        String[] operaciones = {"sumar", "Restar", "Multiplicar", "Dividir"};
+        String[] operaciones = {"Sumar", "Restar", "Multiplicar", "Dividir"};
 
         ArrayAdapter<String> adaptador = new ArrayAdapter<>(this, R.layout.spinner_item_cristian, operaciones);
         sp1.setAdapter(adaptador);
@@ -38,11 +38,11 @@ public class MainActivity extends AppCompatActivity {
 
         if (op.equals("Sumar")) {
             int suma = valor1 + valor2;
-            tv1.setText("La suma es: " +suma);
+            tv1.setText("La Suma es: " +suma);
 
         } else if (op.equals("Restar")) {
             int resta = valor1 - valor2;
-            tv1.setText("La resta es: " +resta);
+            tv1.setText("La Resta es: " +resta);
 
         } else if (op.equals("Multiplicar")) {
             int multiplicar = valor1 * valor2;
